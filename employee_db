@@ -1,0 +1,41 @@
+Department
+-
+dept_no pk fk 
+emp_no pk fk 
+
+Employees
+-
+emp_no pk fk
+birth_date
+first_name
+last_name
+gender
+hire_date
+
+Dept_Empl
+-
+dept_no pk fk -< Department.dept_no
+emp_no pk fk -< Employees.emp_no
+from_date
+to_date
+
+Salaries
+-
+emp_no pk fk - Employees.emp_no
+salary
+from_date
+to_date
+
+Titles
+-
+emp_no pk fk -< Employees.emp_no
+title pk
+from_date pk
+to_date
+
+Managers
+-
+dept_no pk fk >- Department.dept_no
+emp_no pk fk >- Employees.emp_no
+from_date 
+to_date
