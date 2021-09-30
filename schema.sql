@@ -40,8 +40,8 @@ CREATE TABLE salaries (
 
 -- Create a table for Dep_Emp
 CREATE TABLE dept_emp (
-	dept_no VARCHAR(4) NOT NULL,
 	emp_no INT NOT NULL,
+    dept_no VARCHAR(40) NOT NULL,
 	from_date DATE NOT NULL,
 	to_date DATE NOT NULL, 
 	FOREIGN KEY (dept_no) REFERENCES departments (dept_no),
