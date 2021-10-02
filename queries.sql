@@ -121,3 +121,16 @@ ORDER BY de.dept_no;
 -- checking the salaries table
 SELECT * FROM salaries
 ORDER BY to_date DESC;
+
+
+-- create emp_info table to bring in the emp_no, first/last name & gender
+SELECT emp_no,
+    first_name,
+last_name,
+    gender
+INTO emp_info
+FROM employees
+WHERE (birth_date BETWEEN '1952-01-01' AND '1955-12-31')
+AND (hire_date BETWEEN '1985-01-01' AND '1988-12-31');
+--check new table
+SELECT * FROM emp_info;
