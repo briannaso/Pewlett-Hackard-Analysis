@@ -64,4 +64,21 @@ CREATE TABLE titles (
 SELECT * from dept_emp ;
 
 
+-- Filter the retirement_info table to select only Sales & Development
+Select de.emp_no,
+	de.first_name,
+	de.last_name,
+	de.dept_name
+-- INTO sales_dept
+FROM dept_info as de 
+WHERE de.dept_name IN ('Sales', 'Development');
+
+--  Filter table for Sales department only
+SELECT * FROM dept_info as de
+WHERE de.dept_name = 'Sales';
+
+
+--  create a Retirement Titles table that holds all the titles 
+-- of current employees who were born between January 1, 1952 and December 31, 1955.
+
 
