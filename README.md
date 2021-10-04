@@ -1,6 +1,6 @@
-# Pewlett-Hackard-Analysis
+# Pewlett Hackard Analysis
 
-## Overview : Retirement Analysis
+### Overview : Retirement Analysis
 The purpose of this analysis to to determine the number of employees at Pewlett Hackard that are eligable for retirement. We want to group the employees by department, title and select employees eligible for the mentorship program.
 
 ### The Number of Retiring Employees by Title
